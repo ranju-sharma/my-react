@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import ListPage from './components/ListPage';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+
+class MenuBar extends React.Component {
+	render() {
+		return(
+			<h1><ListPage /></h1>
+		)
+	} 
+
+}
+
+ReactDOM.render(<MenuBar />,document.getElementById('my-page'));
