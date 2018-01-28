@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ListPage from './components/ListPage';
+import VerifyProfile from './components/VerifyProfile';
 
 
 class MenuBar extends React.Component {
 	render() {
 		return(
-			<h1><ListPage /></h1>
+			<div>
+				<ListPage />
+				<VerifyProfile />
+			</div>
 		)
 	} 
 
